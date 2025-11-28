@@ -316,8 +316,7 @@ def main():
                     f"⏱️ 执行耗时: {int(duration)}秒\n"
                     f"🕐 完成时间: {end_time.strftime('%Y-%m-%d %H:%M:%S')}"
                 ),
-                sound=NotificationSound.ALARM,
-                group="恩山论坛"
+                sound=NotificationSound.ALARM
             )
         except:
             pass

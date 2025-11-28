@@ -60,7 +60,6 @@ class SFTasksManager:
             config_path = Path(config_path)
 
         self.config_path = config_path
-        self.site_name = "顺丰快递"
         self.accounts = []
         self.task_summary = []
         self.load_config()
@@ -388,8 +387,7 @@ class SFTasksManager:
             send_notification(
                 title=title,
                 content=content,
-                sound=NotificationSound.BIRDSONG,
-                group=self.site_name
+                sound=NotificationSound.BIRDSONG
             )
             logger.info(f"✅ {self.site_name}任务汇总推送发送成功")
 
@@ -461,8 +459,7 @@ def main():
                     f"⏱️ 执行耗时: {int(duration)}秒\n"
                     f"🕐 完成时间: {end_time.strftime('%Y-%m-%d %H:%M:%S')}"
                 ),
-                sound=NotificationSound.ALARM,
-                group="顺丰快递"
+                sound=NotificationSound.ALARM
             )
         except:
             pass

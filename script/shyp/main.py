@@ -807,8 +807,7 @@ class ShypTasks:
             send_notification(
                 title=title,
                 content=content,
-                sound=NotificationSound.BIRDSONG,
-                group="上海云媒体"
+                sound=NotificationSound.BIRDSONG
             )
             self.logger.info("✅ 任务汇总推送发送成功")
 

@@ -152,8 +152,7 @@ def send_notification_summary(all_results, start_time, end_time):
         send_notification(
             title=title,
             content=content,
-            sound=sound,
-            group="文体未来荟"
+            sound=sound
         )
         print("✅ 推送通知发送成功")
 
