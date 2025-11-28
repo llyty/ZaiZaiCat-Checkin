@@ -92,7 +92,7 @@
 | 📺 上海杨浦      | `script/shyp/main.py` | ✅ 可用 | 支持任务列表和积分任务 |
 | 🏢 华润通-万象星   | `script/huaruntong/999/main.py` | ✅ 可用 | 支持答题签到 |
 | 💳 华润通-微信版   | `script/huaruntong/huaruntong_wx/main.py` | ✅ 可用 | 支持签到送积分 |
-| 🛒 华润通-Ole'  | `script/huaruntong/ole/main.py` | ✅ 可用 | 支持签到任务 |
+| 🛒 华润通-Ole'  | `script/huaruntong/ole/main.py` | ❌ 不可用 | 需要动态获取微信code换取token |
 | 🎯 华润通-文体未来荟 | `script/huaruntong/wentiweilaihui/main.py` | ✅ 可用 | 支持签到和积分查询 |
 | 👟 鸿星尔克      | `script/erke/main.py` | ✅ 可用 | 支持签到和积分明细查询 |
 ### 状态说明
@@ -401,6 +401,7 @@ Cookie 有有效期限制，失效后需要重新获取并更新配置文件。�
 ### 2025-11-28
 - ✨ 新增鸿星尔克签到脚本
 - ✨ 支持鸿星尔克积分明细查询功能
+- ❌ Ole'精品超市脚本设为不可用（需要动态获取微信code换取token）
 - 📝 更新项目说明文档
 
 ### 2025-11-24
@@ -411,7 +412,7 @@ Cookie 有有效期限制，失效后需要重新获取并更新配置文件。�
 - ✨ 新增华润通多个子平台支持
 - ✨ ✨ 999 签到功能完善
 - ✨ ✨ 华润通微信小程序签到功能完善
-- ✨ ✨ Ole' 精品超市签到功能完善
+- ✨ ✨ Ole' 精品超市签到功能（已废弃）
 - ✨ ✨ 文体未来荟签到功能完善
 - ✨ 创建项目 README 文档
 - 📝 完善项目说明和使用指南
