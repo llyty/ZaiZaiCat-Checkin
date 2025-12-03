@@ -60,6 +60,7 @@ class SFTasksManager:
             config_path = Path(config_path)
 
         self.config_path = config_path
+        self.site_name = "顺丰速运"
         self.accounts = []
         self.task_summary = []
         self.load_config()
@@ -470,4 +471,3 @@ def main():
 if __name__ == '__main__':
     exit_code = main()
     sys.exit(exit_code)
-
